@@ -1,39 +1,65 @@
-# note-fastapi
+<h1 align="center">📔 note-fastapi</h1>
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+<p align="center">
+<a target="_blank" href="https://github.com/zhouboyi1998/note-fastapi"> 
+<img src="https://img.shields.io/github/stars/zhouboyi1998/note-fastapi?logo=github">
+</a>
+<a target="_blank" href="https://opensource.org/licenses/MIT"> 
+<img src="https://img.shields.io/badge/license-MIT-red"> 
+</a>
+<img src="https://img.shields.io/badge/Python-3.9.6-blue">
+<img src="https://img.shields.io/badge/FastAPI-0.115.8-darkcyan">
+<img src="https://img.shields.io/badge/Uvicorn-0.34.0-royalblue">
+</p>
 
-#### 软件架构
-软件架构说明
+### 📖 语言
 
+简体中文 | [English](./README.en.md)
 
-#### 安装教程
+### ⌛ 开始
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### 创建虚拟环境
 
-#### 使用说明
+* 在根目录下创建虚拟环境
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### 安装第三方库
 
-#### 参与贡献
+```
+pip install fastapi==0.115.8 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+pip install uvicorn==0.34.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
 
+#### pip 国内镜像源
 
-#### 特技
+```
+# 清华大学
+https://pypi.tuna.tsinghua.edu.cn/simple
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+# 中国科学技术大学
+https://pypi.mirrors.ustc.edu.cn/simple
+
+# 阿里云
+https://mirrors.aliyun.com/pypi/simple
+
+# 豆瓣
+https://pypi.douban.com/simple
+```
+
+#### 运行
+
+###### 开发模式
+
+```bash
+uvicorn main:app --port 18072 --reload
+```
+
+###### 生产模式
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port 18072
+```
+
+### 📜 开源协议
+
+[MIT License](https://opensource.org/licenses/MIT) Copyright (c) 2022 周博义
